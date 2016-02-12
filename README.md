@@ -5,4 +5,6 @@ View the application in production here: [meantodo.com](heroku-link.com)
 
 Starting with our fourth Valentine's dinner, we hope to expand and continue contributing to this blog.
 
+This site uses the MEAN stack - all JS!
+
 ![](http://www.jpg-image-goes-here)
