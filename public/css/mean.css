@@ -23,6 +23,34 @@ p.small {
     margin: 1em;
 }
 
+.panel-general,
+.panel-steph,
+.panel-mat,
+.panel-budge {
+    padding: 0px;
+    margin: 1em;
+    opacity: 0.2;
+    text-align: center;
+    height: 5em;
+    vertical-align: middle;
+}
+
+.panel-general {
+    background-color: #3ABEC0;
+}
+
+.panel-steph {
+    background-color: #EBC95E;
+}
+
+.panel-mat {
+    background-color: #E87352;
+}
+
+.panel-budge {
+    background-color: #4AD486;
+}
+
 a,
 a:hover,
 a:focus,
@@ -160,6 +188,10 @@ header .intro-text .skills {
 
 .main-content ul li {
     list-style-type: none;
+}
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
 }
 
 .navbar {

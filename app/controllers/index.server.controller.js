@@ -1,6 +1,6 @@
 exports.render = function(req, res) {
     res.render('index', {
-    	title: 'MEAN MVC',
+    	title: 'FOOD BLOG',
     	user: JSON.stringify(req.user)
     });
 };

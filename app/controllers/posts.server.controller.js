@@ -1,6 +1,5 @@
 var mongoose = require('mongoose'),
 	Post = mongoose.model('Post');
-	// Todo = mongoose.model('Todo');
 
 var getErrorMessage = function(err) {
 	if (err.errors) {

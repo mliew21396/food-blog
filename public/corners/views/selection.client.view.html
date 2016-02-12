@@ -1,4 +1,4 @@
-<div ng-controller="ExampleController">
+<div ng-controller="CornersController">
     <nav class="navbar navbar-custom navbar-center">
         <div class="container">
             <div class="navbar-align" >
@@ -44,10 +44,26 @@
         <hr class="panels col-md-8">
     </div>
 
-    <section class="main-content" data-ng-show="!authentication.user" data-ng-init="find()">
+    <section class="main-content">
         <div class="row">
             <div class="col-md-2"></div>
-            <ul class="panels col-md-6">
+            <div class="col-md-4 panel-general">
+                <a href="">General</a>
+            </div>
+            <div class="col-md-4 panel-steph">
+                <a href="">Steph</a>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 panel-mat">
+                <a href="">Mat</a>
+            </div>
+            <div class="col-md-4 panel-budge">
+                <a href="">Budge</a>
+            </div>
+<!--             <ul class="panels col-md-6">
                 <li data-ng-repeat="post in posts" ng-if="showcompleted && post.completed || !post.completed">
                     <h3><a data-ng-href="#!/posts/{{post._id}}" data-ng-bind="post.title" ng-class="post.completed?'completed':''"></a></h3>
                     <em data-ng-bind="post.created | date:'mediumDate'"></em>
@@ -61,47 +77,8 @@
                 <h3>About Us</h3>
                 <img class="col-md-12" src="../img/budge-profile-pic.jpg">
                 <p>Mao mao mao mao mao.</p>
-            </div>
+            </div> -->
             <div class="col-md-2"></div>
-            <div data-ng-hide="!posts || posts.length">
-                No posts yet, why don't you <a href="/#!/posts/create">create one</a>?
-            </div>
         </div>
     </section>
-
-    <section class="success" id="about" data-ng-show="authentication.user">
-        <div class="container">
-            <ul>
-                <h1>
-                    <li><a href="/#!/posts">List posts</a></li>
-                </h1>
-
-                <h1>
-                    <li><a href="/#!/posts/create">Create post</a></li>
-                </h1>
-            </ul>
-        </div>
-    </section>
-
-    <!-- About Section -->
-<!--     <section class="success" id="about" data-ng-show="!authentication.user">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Section 2</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <p class="text-center">THe Budge is an application for managing your TODOs built on top of the awesome MEAN stack. The acompanying 4 part series blog posts on how to make this application can be found <a href="#">here</a>.</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="https://github.com/Hitman666/MEAN_MVC_4thTutorial" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Fork it on Github
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section> -->
 </div>
