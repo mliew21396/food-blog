@@ -1,4 +1,5 @@
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+console.log("checking node_env: " + process.env.NODE_ENV);
 
 var config = require('./config/config'),
 	mongoose = require('./config/mongoose'),
