@@ -2,7 +2,8 @@ var port = 1337;
 
 module.exports = {
 	port: port,
-	db: 'mongodb://localhost/posts'
+	db: 'mongodb://heroku_1p6bf39c:cpb3sv3o5kg13f710lddplhdl8@ds061355.mongolab.com:61355/heroku_1p6bf39c'
+	// db: 'mongodb://localhost/posts'
 	// facebook: {
 	// 	clientID: '1671331279763296',
 	// 	clientSecret: '4e5ad533fc982e29ac55f87cae6e1484',
