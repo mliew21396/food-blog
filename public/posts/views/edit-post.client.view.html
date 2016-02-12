@@ -1,0 +1,73 @@
+<div data-ng-controller="PostsController">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <!-- <div class="navbar-header page-scroll"> -->
+                <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> -->
+            <!-- </div> -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- <div> -->
+                <a class="navbar-brand" href="#page-top">The Budge</a>
+            <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
+                <ul class="nav navbar-nav navbar-right">
+<!--                     <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li> -->
+<!--
+                    <li class="page-scroll" data-ng-show="!authentication.user">
+                        <a href="/login">Login</a>
+                    </li>
+                    <li class="page-scroll" data-ng-show="!authentication.user">
+                        <a href="/register">Register</a>
+                    </li> -->
+
+                    <!--<li class="page-scroll">
+                        <a href="https://github.com/Hitman666/MEAN_MVC_4thTutorial">Fork on Github</a>
+                    </li>-->
+                    <li class="page-scroll" data-ng-show="authentication.user">
+                        <a href="/#!/posts">POSTS</a>
+                    </li>
+                    <li class="page-scroll" data-ng-show="authentication.user">
+                        <a href="/logout">Hello <span data-ng-bind="authentication.user.name" data-ng-show="authentication.user"></span>, Logout?</a>
+                    </li>
+                </ul>
+            <!-- </div> -->
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div data-ng-init="findOne()" class="container">
+    		<h1>Edit Post</h1>
+    		<form data-ng-submit="update()" novalidate class="form-signin">
+    			<div>
+    				<label for="title" class="sr-only">Title</label>
+    				<div>
+    					<input type="text" data-ng-model="post.title" id="title" placeholder="Title" required autofocus class="form-control">
+    				</div>
+    			</div>
+
+                <div>
+                    <div text-angular ng-model="post.comment"></div>
+                    <textarea data-ng-model="post.comment" id="comment" cols="30" rows="10" placeholder="Comment" class="form-control"></textarea>
+                    <!-- <textarea data-ng-model="post.comment" ta-bind="text" id="comment" cols="30" rows="10" placeholder="Comment" class="form-control" style="display:none;"></textarea> -->
+                </div>
+
+    			<div>
+    				<button type="submit" class="btn btn-lg btn-primary btn-block">Update POST</button>
+    			</div>
+
+    			<div data-ng-show="error">
+    				<strong data-ng-bind="error"></strong>
+    			</div>
+    		</form>
+    	</div>
+    </header>
+</div>
