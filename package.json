@@ -8,18 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Hitman666/MEAN_MVC_4thTutorial.git"
+    "url": "https://github.com/mliew21396/food-blog"
   },
   "keywords": [
     "MEAN",
     "MVC"
   ],
-  "author": "Nikola Brežnjak <nikola.breznjak@gmail.com> (http://www.nikola-breznjak.com/)",
+  "author": "Mathew Liew <mliew21396@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Hitman666/MEAN_MVC_4thTutorial/issues"
+    "url": "https://github.com/mliew21396"
   },
-  "homepage": "https://github.com/Hitman666/MEAN_MVC_4thTutorial",
+  "homepage": "https://github.com/mliew21396/food-blog",
   "dependencies": {
     "body-parser": "^1.10.1",
     "connect-flash": "^0.1.1",

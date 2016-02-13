@@ -1,0 +1,2 @@
+NODEMAILER_USER=fake_secret@gmail.com
+NODEMAILER_PASS=fake_key_id
