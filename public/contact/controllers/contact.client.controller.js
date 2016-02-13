@@ -1,5 +1,5 @@
-angular.module('contact').controller('ContactController', ['$scope', '$http', 'toastr',
-  function($scope, $http, toastr) {
+angular.module('contact').controller('ContactController', ['$scope', '$http',
+  function($scope, $http) {
 
     this.sendMail = function () {
 
@@ -8,13 +8,7 @@ angular.module('contact').controller('ContactController', ['$scope', '$http', 't
             msg : this.contactMsg
         });
 
-        $http.post('/contact-form', contactData).
-            success(function(data, status, headers, config) {
-              toastr.success('Thanks for your message ' + contactData.name + '!');
-            }).
-            error(function(data, status, headers, config) {
-              toastr.error('Sorry your message did not go through. Please contact us at sbm.food.blog@gmail.com!');
-            });
+        ajaxService.sendData(contactData).success(function(result) {})
 
     };
   }

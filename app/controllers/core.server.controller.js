@@ -19,7 +19,9 @@ exports.sendMail = function(req, res) {
       subject: 'Message from ' + contactData.name,
       text: contactData.msg
   };
-console.log(mailOptions);
+
+  console.log(mailOptions);
+
   transporter.sendMail(mailOptions, function(error, response){
       if(error){
           console.log(error);
