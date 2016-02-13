@@ -1,5 +1,5 @@
-angular.module('contact').controller('ContactController', ['$scope', '$http',
-  function($scope, $http) {
+angular.module('contact').controller('ContactController', ['$scope', '$http', 'Contact',
+  function($scope, $http, Contact) {
 
     this.sendMail = function () {
 
@@ -8,7 +8,7 @@ angular.module('contact').controller('ContactController', ['$scope', '$http',
             msg : this.contactMsg
         });
 
-        ajaxService.sendData(contactData).success(function(result) {})
+        Contact.sendData(contactData).success(function(result) {})
 
     };
   }
