@@ -20,7 +20,12 @@ p.small {
 
 .panels {
     background-color: #FFFFFF;
-    margin: 1em;
+    margin-right: 1em;
+}
+
+.panel-default > .panel-heading {
+  background-color: #F0AD4E;
+  color: white;
 }
 
 .panel-general,
@@ -58,6 +63,10 @@ a:active,
 a.active {
     outline: 0;
     color: #18bc9c;
+}
+
+.contact-container {
+    width: 66.66%;
 }
 
 h1,
@@ -212,7 +221,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 .navbar .navbar-align {
-  text-align: center;
+    margin: auto;
+    text-align: center;
 }
 
 .navbar .navbar-nav li a:focus {

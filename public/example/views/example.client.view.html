@@ -1,6 +1,8 @@
 <div ng-controller="ExampleController">
     <nav class="navbar navbar-custom navbar-center">
+        <!-- <div class="container row"> -->
         <div class="container">
+            <!-- <div class="navbar-align col-md-8 col-md-offset-2" > -->
             <div class="navbar-align" >
                 <ul class="nav navbar-nav">
                     <li>
@@ -32,7 +34,7 @@
                         <a href="">Recipes</a>
                     </li>
                     <li>
-                        <a href="">Contact</a>
+                        <a href="#!/contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -40,14 +42,12 @@
     </nav>
 
     <div class="row">
-        <div class="col-md-2"></div>
-        <hr class="panels col-md-8">
+        <hr class="panels col-md-8 col-md-offset-2">
     </div>
 
     <section class="main-content" data-ng-show="!authentication.user" data-ng-init="find()">
         <div class="row">
-            <div class="col-md-2"></div>
-            <ul class="panels col-md-6">
+            <ul class="panels col-md-6 col-md-offset-2">
                 <li data-ng-repeat="post in posts" ng-if="showcompleted && post.completed || !post.completed">
                     <h3><a data-ng-href="#!/posts/{{post._id}}" data-ng-bind="post.title" ng-class="post.completed?'completed':''"></a></h3>
                     <em data-ng-bind="post.created | date:'mediumDate'"></em>
@@ -62,7 +62,6 @@
                 <img class="col-md-12" src="../img/budge-profile-pic.jpg">
                 <p>Mao mao mao mao mao.</p>
             </div>
-            <div class="col-md-2"></div>
             <div data-ng-hide="!posts || posts.length">
                 No posts yet, why don't you <a href="/#!/posts/create">create one</a>?
             </div>

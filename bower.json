@@ -1,17 +1,16 @@
 {
   "name": "Food Blog",
   "version": "0.0.0",
-  "homepage": "https://github.com/Hitman666/MEAN_MVC_4thTutorial",
+  "homepage": "https://github.com/mliew21396",
   "authors": [
-    "Hitman666 <nikola.breznjak@gmail.com>"
+    "mliew21396 <mliew21396@gmail.com>"
   ],
-  "description": "4th Tutorial covering the Angular part of the MEAN stack in becomming a full stack JS developer",
+  "description": "SBM Food Blog",
   "main": "bower.json",
   "moduleType": [
     "node"
   ],
   "keywords": [
-    "MEAN",
     "MVC"
   ],
   "license": "MIT",
@@ -26,5 +25,6 @@
   "dependencies": {
     "angular": "~1.3.9",
     "angular-route": "~1.3.10",
+    "angular-toastr": ""
   }
 }
