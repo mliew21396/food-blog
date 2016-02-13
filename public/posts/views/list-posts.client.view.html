@@ -1,49 +1,5 @@
 <div data-ng-controller="PostsController">
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <!-- <div class="navbar-header page-scroll"> -->
-                <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button> -->
-            <!-- </div> -->
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <!-- <div> -->
-                <a class="navbar-brand" href="#page-top">The Budge</a>
-            <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
-                <ul class="nav navbar-nav navbar-right">
-<!--                     <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li> -->
-<!--
-                    <li class="page-scroll" data-ng-show="!authentication.user">
-                        <a href="/login">Login</a>
-                    </li>
-                    <li class="page-scroll" data-ng-show="!authentication.user">
-                        <a href="/register">Register</a>
-                    </li> -->
-
-                    <!--<li class="page-scroll">
-                        <a href="https://github.com/Hitman666/MEAN_MVC_4thTutorial">Fork on Github</a>
-                    </li>-->
-                    <li class="page-scroll" data-ng-show="authentication.user">
-                        <a href="/#!/posts">POSTS</a>
-                    </li>
-                    <li class="page-scroll" data-ng-show="authentication.user">
-                        <a href="/logout">Hello <span data-ng-bind="authentication.user.name" data-ng-show="authentication.user"></span>, Logout?</a>
-                    </li>
-                </ul>
-            <!-- </div> -->
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <header class="main-content" data-ng-init="find()">
+    <section class="main-content" data-ng-init="find()">
 		<div class="container">
 			<h1>Posts</h1>
 			<ul>
@@ -59,5 +15,5 @@
 				No posts yet, why don't you <a href="/#!/posts/create">create one</a>?
 			</div>
 		</div>
-	</header>
+	</section>
 </div>

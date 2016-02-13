@@ -127,17 +127,6 @@ hr.star-primary:after {
     margin: 0 auto;
 }
 
-/*header {
-    text-align: center;
-    color: #fff;
-    background: #18bc9c;
-}*/
-
-header .container {
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-
 header img {
     display: block;
     margin: 0 auto 20px;
@@ -240,6 +229,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .navbar-default,
 .navbar-inverse {
     border: 0;
+}
+
+.navbar-fixed-top {
+    position: relative;
 }
 
 .navbar-nav > li {
