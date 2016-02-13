@@ -3,7 +3,9 @@ var config = require('./config'),
 	bodyParser = require('body-parser'),
 	passport = require('passport'),
 	flash = require('connect-flash'),
-	session = require('express-session');
+	session = require('express-session'),
+	dotenv = require('dotenv');
+	dotenv.load();
 
 module.exports = function() {
 	var app = express();
