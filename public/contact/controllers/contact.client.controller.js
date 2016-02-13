@@ -3,12 +3,14 @@ angular.module('contact').controller('ContactController', ['$scope', '$http', 'C
 
     this.sendMail = function () {
 
-        var contactData = ({
-            name : this.contactName,
-            msg : this.contactMsg
-        });
+      $scope.isDisabled = true;
 
-        Contact.sendData(contactData).success(function(result) {})
+      var contactData = ({
+          name : this.contactName,
+          msg : this.contactMsg
+      });
+
+      Contact.sendData(contactData).success(function(result) {})
 
     };
   }
