@@ -21,9 +21,13 @@ var PostSchema = new Schema({
 		type: Schema.ObjectId,
 		ref: 'User'
 	},
-	completed: {
-		type: Boolean,
-		default: false
+	likes: {
+		type: Number,
+		default: 0
 	}
+	// completed: {
+	// 	type: Boolean,
+	// 	default: false
+	// }
 });
 mongoose.model('Post', PostSchema);

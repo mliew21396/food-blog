@@ -71,6 +71,21 @@ exports.update = function(req, res) {
 	});
 };
 
+exports.updateLikes = function(req, res) {
+	var post = req.post;
+	post.likes = req.body.likes;
+
+	post.save(function(err) {
+		if (err) {
+			return res.status(400).send({
+				message: getErrorMessage(err)
+			});
+		} else {
+			res.json(post);
+		}
+	});
+};
+
 exports.delete = function(req, res) {
 	var post = req.post;
 	post.remove(function(err) {

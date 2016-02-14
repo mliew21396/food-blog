@@ -4,15 +4,12 @@ var smtpTransport = require("nodemailer-smtp-transport")
 exports.sendMail = function(req, res) {
 
   var contactData = req.body;
-console.log(process.env.NODEMAILER_USER);
-console.log(process.env.NODEMAILER_PASS);
+
   var transporter = nodemailer.createTransport(smtpTransport({
       service: 'gmail',
       auth: {
           user: process.env.NODEMAILER_USER,
           pass: process.env.NODEMAILER_PASS
-          // user: 'sbm.food.blog@gmail.com',
-          // pass: 'kittycat123'
       }
   }));
 
@@ -35,4 +32,8 @@ console.log(process.env.NODEMAILER_PASS);
           res.end("sent");
       }
   });
+};
+
+exports.increaseLike = function(req, res) {
+  var postData = req.body;
 };

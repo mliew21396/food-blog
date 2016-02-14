@@ -11,5 +11,8 @@ module.exports = function(app) {
 		.put(users.requiresLogin, posts.hasAuthorization, posts.update)
 		.delete(users.requiresLogin, posts.hasAuthorization, posts.delete);
 
+  app.route('/api/posts/:postId/like')
+    .put(posts.updateLikes);
+
 	app.param('postId', posts.postByID);
 };
