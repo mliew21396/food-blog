@@ -4,6 +4,8 @@ var config = require('./config'),
 	passport = require('passport'),
 	flash = require('connect-flash'),
 	session = require('express-session'),
+	favicon = require('serve-favicon'),
+	path = require('path'),
 	dotenv = require('dotenv');
 	dotenv.load();
 
@@ -28,6 +30,9 @@ module.exports = function() {
 	app.use(flash());
 	app.use(passport.initialize());
 	app.use(passport.session());
+	app.use(favicon(path.join(__dirname, '..','public','favicon.ico')));
+	// app.use(favicon(path.join(__dirname, '..','public','img','favicon.ico')));
+
 
 	require('../app/routes/index.server.routes.js')(app);
 	require('../app/routes/users.server.routes.js')(app);
