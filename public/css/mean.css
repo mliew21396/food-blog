@@ -145,6 +145,13 @@ hr.star-primary:after {
     background-color: #fff;
 }
 
+.about-us {
+    border: 1px solid #9A8479;
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
 .about-us h3 {
     text-align: center;
 }
@@ -218,6 +225,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
 }
 
+.nav > li:hover{
+  background-color: #ecf0f1;
+}
+
 .navbar {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -238,6 +249,16 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .navbar .navbar-align {
     margin: auto;
     text-align: center;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
 }
 
 .navbar .navbar-nav li a:focus {
@@ -261,6 +282,18 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .navbar-default,
 .navbar-inverse {
     border: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #18bc9c;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #18bc9c;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #18bc9c;
 }
 
 .navbar-fixed-top {
